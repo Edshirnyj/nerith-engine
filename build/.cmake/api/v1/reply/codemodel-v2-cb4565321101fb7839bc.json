@@ -1,0 +1,656 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				},
+				{
+					"build" : "lib/nerith-audio",
+					"jsonFile" : "directory-lib.nerith-audio-Debug-278997fc2cf6d65b6588.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lib/nerith-audio"
+				},
+				{
+					"build" : "lib/nerith-graphica",
+					"jsonFile" : "directory-lib.nerith-graphica-Debug-a1cec0e0d8eae11d7ed3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lib/nerith-graphica"
+				},
+				{
+					"build" : "lib/nerith-graphica-framework",
+					"jsonFile" : "directory-lib.nerith-graphica-framework-Debug-65383e66f9b1dfc8b416.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lib/nerith-graphica-framework"
+				},
+				{
+					"build" : "lib/nerith-inputs",
+					"jsonFile" : "directory-lib.nerith-inputs-Debug-785dbbecca8ea2b909c1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lib/nerith-inputs"
+				},
+				{
+					"build" : "lib/nerith-mathematica",
+					"jsonFile" : "directory-lib.nerith-mathematica-Debug-4e35270e23b47edcb04a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lib/nerith-mathematica"
+				},
+				{
+					"build" : "lib/nerith-win-common",
+					"jsonFile" : "directory-lib.nerith-win-common-Debug-9576c8dc5856d0acbbf7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lib/nerith-win-common"
+				},
+				{
+					"build" : "lib/nerith-win-desktop",
+					"jsonFile" : "directory-lib.nerith-win-desktop-Debug-f6e7bb3c832738a7c8b5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lib/nerith-win-desktop"
+				},
+				{
+					"build" : "src/nerith-core",
+					"jsonFile" : "directory-src.nerith-core-Debug-db3d1b048017b3919b37.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/nerith-core"
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					],
+					"name" : "nerith-engine",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Debug-a6b161d3020aa24f2365.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Debug-3dec8139166b8fff978c.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					],
+					"jsonFile" : "directory-.-Release-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				},
+				{
+					"build" : "lib/nerith-audio",
+					"jsonFile" : "directory-lib.nerith-audio-Release-278997fc2cf6d65b6588.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lib/nerith-audio"
+				},
+				{
+					"build" : "lib/nerith-graphica",
+					"jsonFile" : "directory-lib.nerith-graphica-Release-a1cec0e0d8eae11d7ed3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lib/nerith-graphica"
+				},
+				{
+					"build" : "lib/nerith-graphica-framework",
+					"jsonFile" : "directory-lib.nerith-graphica-framework-Release-65383e66f9b1dfc8b416.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lib/nerith-graphica-framework"
+				},
+				{
+					"build" : "lib/nerith-inputs",
+					"jsonFile" : "directory-lib.nerith-inputs-Release-785dbbecca8ea2b909c1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lib/nerith-inputs"
+				},
+				{
+					"build" : "lib/nerith-mathematica",
+					"jsonFile" : "directory-lib.nerith-mathematica-Release-4e35270e23b47edcb04a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lib/nerith-mathematica"
+				},
+				{
+					"build" : "lib/nerith-win-common",
+					"jsonFile" : "directory-lib.nerith-win-common-Release-9576c8dc5856d0acbbf7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lib/nerith-win-common"
+				},
+				{
+					"build" : "lib/nerith-win-desktop",
+					"jsonFile" : "directory-lib.nerith-win-desktop-Release-f6e7bb3c832738a7c8b5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lib/nerith-win-desktop"
+				},
+				{
+					"build" : "src/nerith-core",
+					"jsonFile" : "directory-src.nerith-core-Release-db3d1b048017b3919b37.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/nerith-core"
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					],
+					"name" : "nerith-engine",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Release-a6b161d3020aa24f2365.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Release-3dec8139166b8fff978c.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					],
+					"jsonFile" : "directory-.-MinSizeRel-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				},
+				{
+					"build" : "lib/nerith-audio",
+					"jsonFile" : "directory-lib.nerith-audio-MinSizeRel-278997fc2cf6d65b6588.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lib/nerith-audio"
+				},
+				{
+					"build" : "lib/nerith-graphica",
+					"jsonFile" : "directory-lib.nerith-graphica-MinSizeRel-a1cec0e0d8eae11d7ed3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lib/nerith-graphica"
+				},
+				{
+					"build" : "lib/nerith-graphica-framework",
+					"jsonFile" : "directory-lib.nerith-graphica-framework-MinSizeRel-65383e66f9b1dfc8b416.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lib/nerith-graphica-framework"
+				},
+				{
+					"build" : "lib/nerith-inputs",
+					"jsonFile" : "directory-lib.nerith-inputs-MinSizeRel-785dbbecca8ea2b909c1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lib/nerith-inputs"
+				},
+				{
+					"build" : "lib/nerith-mathematica",
+					"jsonFile" : "directory-lib.nerith-mathematica-MinSizeRel-4e35270e23b47edcb04a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lib/nerith-mathematica"
+				},
+				{
+					"build" : "lib/nerith-win-common",
+					"jsonFile" : "directory-lib.nerith-win-common-MinSizeRel-9576c8dc5856d0acbbf7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lib/nerith-win-common"
+				},
+				{
+					"build" : "lib/nerith-win-desktop",
+					"jsonFile" : "directory-lib.nerith-win-desktop-MinSizeRel-f6e7bb3c832738a7c8b5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lib/nerith-win-desktop"
+				},
+				{
+					"build" : "src/nerith-core",
+					"jsonFile" : "directory-src.nerith-core-MinSizeRel-db3d1b048017b3919b37.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/nerith-core"
+				}
+			],
+			"name" : "MinSizeRel",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					],
+					"name" : "nerith-engine",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-a6b161d3020aa24f2365.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-MinSizeRel-3dec8139166b8fff978c.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					],
+					"jsonFile" : "directory-.-RelWithDebInfo-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				},
+				{
+					"build" : "lib/nerith-audio",
+					"jsonFile" : "directory-lib.nerith-audio-RelWithDebInfo-278997fc2cf6d65b6588.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lib/nerith-audio"
+				},
+				{
+					"build" : "lib/nerith-graphica",
+					"jsonFile" : "directory-lib.nerith-graphica-RelWithDebInfo-a1cec0e0d8eae11d7ed3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lib/nerith-graphica"
+				},
+				{
+					"build" : "lib/nerith-graphica-framework",
+					"jsonFile" : "directory-lib.nerith-graphica-framework-RelWithDebInfo-65383e66f9b1dfc8b416.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lib/nerith-graphica-framework"
+				},
+				{
+					"build" : "lib/nerith-inputs",
+					"jsonFile" : "directory-lib.nerith-inputs-RelWithDebInfo-785dbbecca8ea2b909c1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lib/nerith-inputs"
+				},
+				{
+					"build" : "lib/nerith-mathematica",
+					"jsonFile" : "directory-lib.nerith-mathematica-RelWithDebInfo-4e35270e23b47edcb04a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lib/nerith-mathematica"
+				},
+				{
+					"build" : "lib/nerith-win-common",
+					"jsonFile" : "directory-lib.nerith-win-common-RelWithDebInfo-9576c8dc5856d0acbbf7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lib/nerith-win-common"
+				},
+				{
+					"build" : "lib/nerith-win-desktop",
+					"jsonFile" : "directory-lib.nerith-win-desktop-RelWithDebInfo-f6e7bb3c832738a7c8b5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "lib/nerith-win-desktop"
+				},
+				{
+					"build" : "src/nerith-core",
+					"jsonFile" : "directory-src.nerith-core-RelWithDebInfo-db3d1b048017b3919b37.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/nerith-core"
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					],
+					"name" : "nerith-engine",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-a6b161d3020aa24f2365.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-RelWithDebInfo-3dec8139166b8fff978c.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Git Projects/nerith-engine/build",
+		"source" : "D:/Git Projects/nerith-engine"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}

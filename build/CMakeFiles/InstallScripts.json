@@ -1,0 +1,15 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/Git Projects/nerith-engine/build/cmake_install.cmake",
+		"D:/Git Projects/nerith-engine/build/lib/nerith-audio/cmake_install.cmake",
+		"D:/Git Projects/nerith-engine/build/lib/nerith-graphica/cmake_install.cmake",
+		"D:/Git Projects/nerith-engine/build/lib/nerith-graphica-framework/cmake_install.cmake",
+		"D:/Git Projects/nerith-engine/build/lib/nerith-inputs/cmake_install.cmake",
+		"D:/Git Projects/nerith-engine/build/lib/nerith-mathematica/cmake_install.cmake",
+		"D:/Git Projects/nerith-engine/build/lib/nerith-win-common/cmake_install.cmake",
+		"D:/Git Projects/nerith-engine/build/lib/nerith-win-desktop/cmake_install.cmake",
+		"D:/Git Projects/nerith-engine/build/src/nerith-core/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
