@@ -1,17 +1,20 @@
-#ifndef MATHEMATICA_H
-#define MATHEMATICA_H
+#ifndef _MATHEMATICA_H
+#define _MATHEMATICA_H
 
 #include <cmath>
 #include <cstdint>
 
+#include "types.h"
+
 // Math constants
-#define MATH_PI             3.1415927f
-#define MATH_PI_OVER_TWO    1.5707963f
-#define MATH_PI_OVER_THREE  1.0471975f
-#define MATH_PI_OVER_FOUR   0.7853982f
-#define MATH_PI_OVER_SIX    0.5235987f
-#define TWO_PI              6.2831853f
-#define THREE_PI_OVER_TWO   4.7123889f
+
+#define MATH_PI                 3.1415927f
+#define MATH_PI_OVER_TWO        1.5707963f
+#define MATH_PI_OVER_THREE      1.0471975f
+#define MATH_PI_OVER_FOUR       0.7853982f
+#define MATH_PI_OVER_SIX        0.5235987f
+#define MATH_TWO_PI             6.2831853f
+#define MATH_THREE_PI_OVER_TWO  4.7123889f
 
 #define MATH_E          2.718288f
 #define MATH_LOG10E     0.4342945f
@@ -20,71 +23,66 @@
 #define MATH_DEG_TO_RAD 0.0174533f
 #define MATH_RAD_TO_DEG 57.2958f
 
-typedef struct 
-{
-    float (*AbsF)(float x);
-    double (*AbsD)(double x);
-    signed short (*AbsS)(short x);
-    signed int (*AbsI)(int x);
-    long (*AbsL)(long x);
-    signed char (*AbsC)(signed char x);
-
-    float (*Sin)(float x);
-    float (*Sinh)(float x);
-    float (*Asin)(float x);
-    float (*Cos)(float x);
-    float (*Cosh)(float x);
-    float (*Acos)(float x);
-    float (*Tan)(float x);
-    float (*Tanh)(float x);
-    float (*Atan)(float x);
-    float (*Atan2)(float y, float x);
-    float (*Sqrt)(float x);
-    float (*Pow)(float x, float y);
-    float (*Ceiling)(float n);
-    float (*Floor)(float n);
-
-    float (*Log)(float x);
-
-    float (*LogToBase)(float x, float base);
-
-    long (*BigMul64)(long a, long b);
-
-    int (*DivRem)(int a, int b, int* result);
-    int (*DivRem64)(int64_t a, int64_t b, int64_t* result);
-
-} MathHelper_t;
 
 // Math inline functions absolute value
-static inline float AbsF(float x);
-static inline double AbsD(double x);
-static inline signed short AbsS(short x);
-static inline signed int AbsI(int x);
-static inline long AbsL(long x);
-static inline signed char AbsC(signed char x);
 
-static inline float Sin(float x);
-static inline float Sinh(float x);
-static inline float Asin(float x);
-static inline float Cos(float x);
-static inline float Cosh(float x);
-static inline float Acos(float x);
-static inline float Tan(float x);
-static inline float Tanh(float x);
-static inline float Atan(float x);
-static inline float Atan2(float y, float x);
-static inline float Sqrt(float x);
-static inline float Pow(float x, float y);
-static inline float Ceiling(float n);
-static inline float Floor(float n);
+static inline Float Absf(Float x);
+static inline Double Abs(Double x);
 
-static inline float Log(float x);
+static inline Double Sin(Double radians);
+static inline Double Sinh(Double radians);
+static inline Double Asin(Double radians);
 
-static inline float LogToBase(float x, float base);
+static inline Double Cos(Double radians);
+static inline Double Cosh(Double radians);
+static inline Double Acos(Double radians);
 
-static inline long BigMul64(long a, long b);
+static inline Double Tan(Double radians);
+static inline Double Tanh(Double radians);
+static inline Double Atan(Double radians);
+static inline Double Atan2(Double y, Double x);
 
-static inline int DivRem(int a, int b, int* result);
-static inline int DivRem64(int64_t a, int64_t b, int64_t* result);
+static inline Long BigMul(Long a, Long b);
 
-#endif // MATHEMATICA_H
+static inline Double Sqrt(Double n);
+static inline Double Pow(Double x, Double y);
+static inline Double Ceiling(Double n);
+static inline Double Floor(Double n);
+
+static inline Int DivRem(Int a, Int b, Int* result);
+static inline Long DivRem64(Long a, Long b, Long* result);
+
+static inline Double Log(Double n);
+static inline Double Log(Double n, Double base);
+static inline Double Log10(Double n);
+static inline Double Log2(Double n);
+
+static inline Double Exp(Double n);
+static inline Double Remainder(Double x, Double y);
+
+static inline Double Min(Double a, Double b);
+static inline Double Max(Double a, Double b);
+
+static inline Double Round(Double n);
+static inline Double Round(Double n, Int digits);
+
+static inline Double Truncate(Double n);
+
+static inline Double Sign(Double n);
+
+static inline Int NextPowerOfTwo(Int n);
+static inline Long NextPowerOfTwo64(Long n);
+static inline Double NextPowerOfTwoD(Double n);
+
+static inline Long Factorial(Int n);
+
+static inline Long BinomialCoefficient(Int n, Int k);
+
+static inline Double InverseSqrtFast(Double n);
+
+static inline Double DeegreesToRadians(Double degrees);
+static inline Double RadiansToDegrees(Double radians);
+
+static inline void Swap(void* a, void* b);
+
+#endif // _MATHEMATICA_H

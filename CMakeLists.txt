@@ -7,6 +7,7 @@ add_subdirectory(lib/nerith-graphica)
 add_subdirectory(lib/nerith-graphica-framework)
 add_subdirectory(lib/nerith-inputs)
 add_subdirectory(lib/nerith-mathematica)
+add_subdirectory(lib/nerith-platforms)
 add_subdirectory(lib/nerith-win-common)
 add_subdirectory(lib/nerith-win-desktop)
 

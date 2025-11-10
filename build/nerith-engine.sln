@@ -4,10 +4,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ALL_BUILD", "ALL_BUILD.vcxproj", "{89BFC9DF-7A4F-35D8-93E0-010788C0A826}"
 	ProjectSection(ProjectDependencies) = postProject
 		{EC935F4E-0DF7-3D28-953B-5607C84F729C} = {EC935F4E-0DF7-3D28-953B-5607C84F729C}
+		{C20A6D98-800F-359B-BDB4-F8BEE9147D06} = {C20A6D98-800F-359B-BDB4-F8BEE9147D06}
+		{D8A4A8BA-0377-3119-AA32-8C9DCC1A516F} = {D8A4A8BA-0377-3119-AA32-8C9DCC1A516F}
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZERO_CHECK", "ZERO_CHECK.vcxproj", "{EC935F4E-0DF7-3D28-953B-5607C84F729C}"
 	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "nerith-mathematica", "lib\nerith-mathematica\nerith-mathematica.vcxproj", "{C20A6D98-800F-359B-BDB4-F8BEE9147D06}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EC935F4E-0DF7-3D28-953B-5607C84F729C} = {EC935F4E-0DF7-3D28-953B-5607C84F729C}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "nerith-platforms", "lib\nerith-platforms\nerith-platforms.vcxproj", "{D8A4A8BA-0377-3119-AA32-8C9DCC1A516F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EC935F4E-0DF7-3D28-953B-5607C84F729C} = {EC935F4E-0DF7-3D28-953B-5607C84F729C}
 	EndProjectSection
 EndProject
 Global
@@ -30,6 +42,22 @@ Global
 		{EC935F4E-0DF7-3D28-953B-5607C84F729C}.MinSizeRel|x64.Build.0 = MinSizeRel|x64
 		{EC935F4E-0DF7-3D28-953B-5607C84F729C}.RelWithDebInfo|x64.ActiveCfg = RelWithDebInfo|x64
 		{EC935F4E-0DF7-3D28-953B-5607C84F729C}.RelWithDebInfo|x64.Build.0 = RelWithDebInfo|x64
+		{C20A6D98-800F-359B-BDB4-F8BEE9147D06}.Debug|x64.ActiveCfg = Debug|x64
+		{C20A6D98-800F-359B-BDB4-F8BEE9147D06}.Debug|x64.Build.0 = Debug|x64
+		{C20A6D98-800F-359B-BDB4-F8BEE9147D06}.Release|x64.ActiveCfg = Release|x64
+		{C20A6D98-800F-359B-BDB4-F8BEE9147D06}.Release|x64.Build.0 = Release|x64
+		{C20A6D98-800F-359B-BDB4-F8BEE9147D06}.MinSizeRel|x64.ActiveCfg = MinSizeRel|x64
+		{C20A6D98-800F-359B-BDB4-F8BEE9147D06}.MinSizeRel|x64.Build.0 = MinSizeRel|x64
+		{C20A6D98-800F-359B-BDB4-F8BEE9147D06}.RelWithDebInfo|x64.ActiveCfg = RelWithDebInfo|x64
+		{C20A6D98-800F-359B-BDB4-F8BEE9147D06}.RelWithDebInfo|x64.Build.0 = RelWithDebInfo|x64
+		{D8A4A8BA-0377-3119-AA32-8C9DCC1A516F}.Debug|x64.ActiveCfg = Debug|x64
+		{D8A4A8BA-0377-3119-AA32-8C9DCC1A516F}.Debug|x64.Build.0 = Debug|x64
+		{D8A4A8BA-0377-3119-AA32-8C9DCC1A516F}.Release|x64.ActiveCfg = Release|x64
+		{D8A4A8BA-0377-3119-AA32-8C9DCC1A516F}.Release|x64.Build.0 = Release|x64
+		{D8A4A8BA-0377-3119-AA32-8C9DCC1A516F}.MinSizeRel|x64.ActiveCfg = MinSizeRel|x64
+		{D8A4A8BA-0377-3119-AA32-8C9DCC1A516F}.MinSizeRel|x64.Build.0 = MinSizeRel|x64
+		{D8A4A8BA-0377-3119-AA32-8C9DCC1A516F}.RelWithDebInfo|x64.ActiveCfg = RelWithDebInfo|x64
+		{D8A4A8BA-0377-3119-AA32-8C9DCC1A516F}.RelWithDebInfo|x64.Build.0 = RelWithDebInfo|x64
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3F3DAB4A-A520-369E-A1AA-9B0AD804F82D}
