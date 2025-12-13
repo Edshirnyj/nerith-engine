@@ -1,4 +1,0 @@
-D:/Git Projects/nerith-engine/build/CMakeFiles/ALL_BUILD.dir
-D:/Git Projects/nerith-engine/build/CMakeFiles/ZERO_CHECK.dir
-D:/Git Projects/nerith-engine/build/lib/nerith-mathematica/CMakeFiles/nerith-mathematica.dir
-D:/Git Projects/nerith-engine/build/lib/nerith-platforms/CMakeFiles/nerith-platforms.dir
