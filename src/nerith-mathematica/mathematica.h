@@ -6,9 +6,9 @@
 #include <cstdint>
 
 #include "nerith-platforma/types.h"
+#include "nerith-platforma/overload.h"
 
 // Math constants
-
 #define MATH_PI                 3.1415927f
 #define MATH_PI_OVER_TWO        1.5707963f
 #define MATH_PI_OVER_THREE      1.0471975f
@@ -26,9 +26,21 @@
 
 
 // Math inline functions absolute value
+static inline Byte Abs_Byte(Byte x);
+static inline Short Abs_Short(Short x);
+static inline Int Abs_Int(Int x);
+static inline Long Abs_Long(Long x);
+static inline Float Abs_Float(Float x);
+static inline Double Abs_Double(Double x);
 
-static inline Float Absf(Float x);
-static inline Double Abs(Double x);
+#define ABS(x) _Generic((x),\
+    Byte: Abs_Byte,\
+    Short: Abs_Short,\
+    Int: Abs_Int,\
+    Long: Abs_Long,\
+    Float: Abs_Float,\
+    Double: Abs_Double \
+)(x)
 
 static inline Double Sin(Double radians);
 static inline Double Sinh(Double radians);
@@ -50,36 +62,112 @@ static inline Double Pow(Double x, Double y);
 static inline Double Ceiling(Double n);
 static inline Double Floor(Double n);
 
-static inline Int DivRem(Int a, Int b, Int* result);
-static inline Long DivRem64(Long a, Long b, Long* result);
+static inline Int DivRem_Int(Int a, Int b, Int* result);
+static inline Long DivRem_Long(Long a, Long b, Long* result);
 
-static inline Double Log(Double n);
-static inline Double Log_Base(Double n, Double base);
+#define DivRem(a, b, result) _Generic((a),\
+    Int: DivRem_Int,\
+    Long: DivRem_Long\
+)(a, b, result)
+
+static inline Double Log_Natural(Double n);
+static inline Double Log_To_Base(Double n, Double base);
+#define Log(...) _Overload_Args2(Log_Natural, Log_To_Base, __VA_ARGS__)
+
 static inline Double Log10(Double n);
 static inline Double Log2(Double n);
 
 static inline Double Exp(Double n);
 static inline Double Remainder(Double x, Double y);
 
-static inline Double Min(Double a, Double b);
-static inline Double Max(Double a, Double b);
+static inline Byte Min_Byte(Byte a, Byte b);
+static inline Ubyte Min_Ubyte(Ubyte a, Ubyte b);
+static inline Short Min_Short(Short a, Short b);
+static inline Ushort Min_Ushort(Ushort a, Ushort b);
+static inline Int Min_Int(Int a, Int b);
+static inline Uint Min_Uint(Uint a, Uint b);
+static inline Long Min_Long(Long a, Long b);
+static inline Ulong Min_Ulong(Ulong a, Ulong b);
+static inline Float Min_Float(Float a, Float b);
+static inline Double Min_Double(Double a, Double b);
 
-static inline Double Round(Double n);
+#define Min(a, b) _Generic((a),\
+    Byte: Min_Byte,\
+    Ubyte: Min_Ubyte,\
+    Short: Min_Short,\
+    Ushort: Min_Ushort,\
+    Int: Min_Int,\
+    Uint: Min_Uint,\
+    Long: Min_Long,\
+    Ulong: Min_Ulong,\
+    Float: Min_Float,\
+    Double: Min_Double \
+)(a, b)
+
+static inline Byte Max_Byte(Byte a, Byte b);
+static inline Ubyte Max_Ubyte(Ubyte a, Ubyte b);
+static inline Short Max_Short(Short a, Short b);
+static inline Ushort Max_Ushort(Ushort a, Ushort b);
+static inline Int Max_Int(Int a, Int b);
+static inline Uint Max_Uint(Uint a, Uint b);
+static inline Long Max_Long(Long a, Long b);
+static inline Ulong Max_Ulong(Ulong a, Ulong b);
+static inline Float Max_Float(Float a, Float b);
+static inline Double Max_Double(Double a, Double b);
+
+#define Max(a, b) _Generic((a),\
+    Byte: Max_Byte,\
+    Ubyte: Max_Ubyte,\
+    Short: Max_Short,\
+    Ushort: Max_Ushort,\
+    Int: Max_Int,\
+    Uint: Max_Uint,\
+    Long: Max_Long,\
+    Ulong: Max_Ulong,\
+    Float: Max_Float,\
+    Double: Max_Double \
+)(a, b)
+
+static inline Double Round_Nearest(Double n);
 static inline Double Round_Digits(Double n, Int digits);
+#define Round(...) _Overload_Args2(Round_Nearest, Round_Digits, __VA_ARGS__)
 
 static inline Double Truncate(Double n);
 
-static inline Double Sign(Double n);
+static inline Int Sign_Byte(Byte n);
+static inline Int Sign_Short(Short n);
+static inline Int Sign_Int(Int n);
+static inline Int Sign_Long(Long n);
+static inline Int Sign_Float(Float n);
+static inline Int Sign_Double(Double n);
 
-static inline Int NextPowerOfTwo(Int n);
-static inline Long NextPowerOfTwo64(Long n);
-static inline Double NextPowerOfTwoD(Double n);
+#define Sign(x) _Generic((x),\
+    Byte: Sign_Byte,\
+    Short: Sign_Short,\
+    Int: Sign_Int,\
+    Long: Sign_Long,\
+    Float: Sign_Float,\
+    Double: Sign_Double \
+)(x)
+
+static inline Int NextPowerOfTwo_Int(Int n);
+static inline Long NextPowerOfTwo_Long(Long n);
+static inline Float NextPowerOfTwo_Float(Float n);
+static inline Double NextPowerOfTwo_Double(Double n);
+
+#define NextPowerOfTwo(n) _Generic((n),\
+    Int: NextPowerOfTwo_Int,\
+    Long: NextPowerOfTwo_Long,\
+    Float: NextPowerOfTwo_Float,\
+    Double: NextPowerOfTwo_Double\
+)(n)
 
 static inline Long Factorial(Int n);
 
 static inline Long BinomialCoefficient(Int n, Int k);
 
-static inline Double InverseSqrtFast(Double n);
+static inline Float InverseSqrtFast_Float(Float n);
+static inline Double InverseSqrtFast_Double(Double n);
 
 static inline Double DeegreesToRadians(Double degrees);
 static inline Double RadiansToDegrees(Double radians);

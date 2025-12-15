@@ -4,6 +4,9 @@
 typedef signed char Byte;
 typedef unsigned char Ubyte;
 
+typedef signed char Char;
+typedef unsigned char Uchar;
+
 typedef signed short Short;
 typedef unsigned short Ushort;
 
