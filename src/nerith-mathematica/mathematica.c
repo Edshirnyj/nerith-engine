@@ -294,16 +294,82 @@ inline Double InverseSqrtFast_Double(Double n) {
     return n;
 };
 
-inline Double DeegreesToRadians(Double degrees) {
+inline Float DeegreesToRadians_Float(Float degrees) {
     return degrees * MATH_DEG_TO_RAD;
 };
 
-inline Double RadiansToDegrees(Double radians) {
+inline Double DeegreesToRadians_Double(Double degrees) {
+    return degrees * MATH_DEG_TO_RAD;
+};
+
+inline Float RadiansToDegrees_Float(Float radians) {
     return radians * MATH_RAD_TO_DEG;
 };
 
-inline void Swap(void* a, void* b)  {
+inline Double RadiansToDegrees_Double(Double radians) {
+    return radians * MATH_RAD_TO_DEG;
+};
+
+inline void Swap(T a, T b)  {
     void* tmp = a;
     a = b;
     b = tmp;
+}
+
+inline Int Clamp_Int(Int a, Int min, Int max) {
+    return Max(min, Min(max, a));
+};
+
+inline Float Clamp_Float(Float a, Float min, Float max) {
+    return Max(min, Min(max, a));
+};
+
+inline Double Clamp_Double(Double a, Double min, Double max) {
+    return Max(min, Min(max, a));
+};
+
+inline Int MapRange_Int(Int value, Int min, Int max, Int newMin, Int newMax) {
+    return newMin + ((newMax - newMin) * ((value - min) / (max - min)));
+};
+
+inline Float MapRange_Float(Float value, Float min, Float max, Float newMin, Float newMax) {
+    return newMin + ((newMax - newMin) * ((value - min) / (max - min)));
+};
+
+inline Double MapRange_Double(Double value, Double min, Double max, Double newMin, Double newMax) {
+    return newMin + ((newMax - newMin) * ((value - min) / (max - min)));
+};
+
+inline Bool AproximatelyEqual(Float a, Float b, Int maxDeltaBits){
+    return Abs(a - b) <= Max(1, Max(Abs(a), Abs(b))) >> maxDeltaBits;
+};
+
+inline Bool ApproximateEqualEpsilon_Double(Double a, Double b, Double epsilon){
+    const Double doubleNormal = (1L << 52) * DOUBLE_EPSILON;
+    Double absA = Abs(a);
+    Double absB = Abs(b);
+    Double diff = Abs(a - b);
+
+    if(a == b) return true;
+
+    if(a == 0 || b == 0 || diff < doubleNormal){
+        return diff < (epsilon * doubleNormal);
+    }
+
+    return diff / Min((absA + absB), DOUBLE_MAX) < epsilon;
+};
+
+inline Bool ApproximateEqualEpsilon_Float(Float a, Float b, Float epsilon){
+    const Float floatNormal = (1 << 23) * FLOAT_EPSILON;
+    Float absA = Abs(a);
+    Float absB = Abs(b);
+    Float diff = Abs(a - b);
+
+    if(a == b) return true;
+
+    if(a == 0 || b == 0 || diff < floatNormal){
+        return diff < (epsilon * floatNormal);
+    }
+
+    return diff / Min((absA + absB), FLOAT_MAX) < epsilon;
 };

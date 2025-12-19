@@ -1,13 +1,10 @@
-cmake_minimum_required(VERSION 3.10.0)
-project(nerith-engine VERSION 0.1.0 LANGUAGES C)
+cmake_minimum_required(VERSION 3.16)
+project(nerith-engine LANGUAGES C)
+
+set(CMAKE_C_STANDARD 17)
+set(CMAKE_C_STANDARD_REQUIRED ON)
+set(CMAKE_C_EXTENSIONS OFF)
 
 # Add modules
-add_subdirectory(src/nerith-audio)
-add_subdirectory(src/nerith-graphica)
-add_subdirectory(src/nerith-graphica-framework)
-add_subdirectory(src/nerith-inputs)
 add_subdirectory(src/nerith-mathematica)
 add_subdirectory(src/nerith-platforma)
-add_subdirectory(src/nerith-win-common)
-add_subdirectory(src/nerith-win-desktop)
-add_subdirectory(src/nerith-core)
